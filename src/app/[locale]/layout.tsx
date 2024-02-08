@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import ClientThemeProvider from "@/providers/ClientThemeProvider";
+import { poppins, courierPrime, raleway } from "../fonts";
 
 export default async function LocaleLayout({
   children,
@@ -12,7 +13,9 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body>
+      <body
+        className={`${raleway.variable} ${poppins.variable} ${courierPrime.variable}`}
+      >
         <ClientThemeProvider>
           <NextIntlClientProvider locale={locale} messages={messages}>
             {children}
