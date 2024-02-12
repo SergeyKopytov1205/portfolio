@@ -1,0 +1,23 @@
+.container {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 32px;
+  background-color: var(--background_secondary);
+  border-radius: var(--border_radius_big);
+  box-shadow: var(--shadow);
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+}

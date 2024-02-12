@@ -1,0 +1,18 @@
+.button {
+  width: 100%;
+  min-width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60%;
+  background-color: var(--background_button);
+  box-shadow: var(--shadow);
+}
+
+.icon {
+  color: var(--text_primary);
+  width: 20px;
+  height: 20px;
+}
