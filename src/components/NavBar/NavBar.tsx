@@ -7,14 +7,15 @@ import {
   IconFileText,
   IconHome,
 } from "@tabler/icons-react";
-import NavBarItem, { NavBarItemType } from "./NavBarItem/NavBarItem";
+import NavBarItem from "./NavBarItem/NavBarItem";
 import classes from "./NavBar.module.css";
 import { usePathname } from "@/navigation";
+import { NavBarItemType } from "@/types";
 
 const links: Omit<NavBarItemType, "isActive">[] = [
   { name: "Home", href: "/", Icon: IconHome },
-  { name: "Resume", href: "/resume", Icon: IconFileText },
-  { name: "Work", href: "/work", Icon: IconBriefcase },
+  { name: "Experience", href: "/experience", Icon: IconBriefcase },
+  { name: "Examples", href: "/examples", Icon: IconFileText },
   { name: "Contact", href: "/contact", Icon: IconAddressBook },
 ];
 

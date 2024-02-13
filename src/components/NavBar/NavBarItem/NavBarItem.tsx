@@ -1,13 +1,7 @@
 import { Link } from "@/navigation";
-import { TablerIconsProps } from "@tabler/icons-react";
 import classes from "./NavBarItem.module.css";
+import { NavBarItemType } from "@/types";
 
-export type NavBarItemType = {
-  name: string;
-  Icon: (props: TablerIconsProps) => JSX.Element;
-  href: string;
-  isActive: boolean;
-};
 const NavBarItem = ({ href, Icon, isActive, name }: NavBarItemType) => {
   return (
     <Link

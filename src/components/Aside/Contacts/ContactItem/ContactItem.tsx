@@ -1,17 +1,13 @@
 import { Link } from "@/navigation";
 import classes from "./ContactItem.module.css";
-import { TablerIconsProps } from "@tabler/icons-react";
+import { ContactType } from "@/types";
 
-export type ContactItemType = {
-  href: string;
-  name: string;
-  description: string;
-  Icon: (props: TablerIconsProps) => JSX.Element;
-};
-
-const ContactItem = ({ Icon, description, href, name }: ContactItemType) => {
+const ContactItem = ({ Icon, description, href, name }: ContactType) => {
   return (
-    <Link href={href} className={classes.link}>
+    <Link
+      href={href}
+      className={`${classes.link} ${href === "#" ? classes.disabled : ""}`}
+    >
       <Icon className={classes.icon} />
       <div className={classes.content}>
         <p className={classes.name}>{name}</p>

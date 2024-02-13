@@ -1,18 +1,7 @@
-import { IconLocation, IconMail, IconPhone } from "@tabler/icons-react";
-import ContactItem, { ContactItemType } from "./ContactItem/ContactItem";
+import ContactItem from "./ContactItem/ContactItem";
 import classes from "./Contacts.module.css";
 import DownloadButton from "./DownloadButton/DownloadButton";
-
-const contacts: ContactItemType[] = [
-  { description: "+77777777111", href: "#", Icon: IconPhone, name: "Phone" },
-  { description: "example@.tt.com", href: "#", Icon: IconMail, name: "Email" },
-  {
-    description: "Russia, Ekaterinburg",
-    href: "#",
-    Icon: IconLocation,
-    name: "Location",
-  },
-];
+import { contacts } from "@/data";
 
 const Contacts = () => {
   return (

@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import ClientThemeProvider from "@/providers/ClientThemeProvider";
 import { poppins, courierPrime, raleway } from "../fonts";
-import classes from "./page.module.css";
+import classes from "./layout.module.css";
 import Header from "@/components/Header/Header";
 import NavBar from "@/components/NavBar/NavBar";
 import Aside from "@/components/Aside/Aside";

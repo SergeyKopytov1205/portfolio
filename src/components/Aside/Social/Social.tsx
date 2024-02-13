@@ -1,11 +1,6 @@
-import SocialItem, { SocialItemType } from "./SocialItem/SocialItem";
+import SocialItem from "./SocialItem/SocialItem";
 import classes from "./Social.module.css";
-import { IconBrandGithub, IconBrandTelegram } from "@tabler/icons-react";
-
-const socials: SocialItemType[] = [
-  { href: "/1", Icon: IconBrandTelegram, iconColor: "#0088cc" },
-  { href: "/2", Icon: IconBrandGithub, iconColor: "#171515" },
-];
+import { socials } from "@/data";
 
 const Social = () => {
   return (
