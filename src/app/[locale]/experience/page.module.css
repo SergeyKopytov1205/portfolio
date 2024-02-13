@@ -7,3 +7,12 @@
   justify-content: space-between;
   gap: 24px;
 }
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 167%;
+  letter-spacing: 0.03em;
+  color: var(--text_primary);
+}

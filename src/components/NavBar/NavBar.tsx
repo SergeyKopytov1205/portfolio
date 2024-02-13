@@ -3,7 +3,7 @@
 import { memo } from "react";
 import {
   IconAddressBook,
-  IconBriefcase,
+  IconBriefcase2,
   IconFileText,
   IconHome,
 } from "@tabler/icons-react";
@@ -14,7 +14,7 @@ import { NavBarItemType } from "@/types";
 
 const links: Omit<NavBarItemType, "isActive">[] = [
   { name: "Home", href: "/", Icon: IconHome },
-  { name: "Experience", href: "/experience", Icon: IconBriefcase },
+  { name: "Experience", href: "/experience", Icon: IconBriefcase2 },
   { name: "Examples", href: "/examples", Icon: IconFileText },
   { name: "Contact", href: "/contact", Icon: IconAddressBook },
 ];

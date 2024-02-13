@@ -1,0 +1,12 @@
+.item {
+  padding: 4px 8px;
+  list-style: none;
+  border-radius: var(--border_radius_small);
+  background-color: var(--background_button);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text_primary);
+}

@@ -1,9 +1,15 @@
-import { SocialType } from "@/types";
+import { TablerIconsProps } from "@tabler/icons-react";
 import {
   IconBrandGithub,
   IconBrandTelegram,
   IconBrandWhatsapp,
 } from "@tabler/icons-react";
+
+export type SocialType = {
+  href: string;
+  Icon: (props: TablerIconsProps) => JSX.Element;
+  iconColor: string;
+};
 
 export const socials: SocialType[] = [
   {

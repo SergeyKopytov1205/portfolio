@@ -1,11 +1,8 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import classes from "./StackItem.module.css";
+import { StackType } from "@/data";
 
-type StackItemProps = {
-  name: string;
-  imageSrc: StaticImageData;
-};
-const StackItem = ({ imageSrc, name }: StackItemProps) => {
+const StackItem = ({ imageSrc, name }: StackType) => {
   return (
     <li className={classes.item}>
       <div className={classes.image}>

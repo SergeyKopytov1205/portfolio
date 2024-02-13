@@ -1,6 +1,6 @@
 import { Link } from "@/navigation";
 import classes from "./SocialItem.module.css";
-import { SocialType } from "@/types";
+import { SocialType } from "@/data";
 
 const SocialItem = ({ Icon, href, iconColor }: SocialType) => {
   return (

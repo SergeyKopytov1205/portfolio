@@ -7,8 +7,14 @@ import JSLogo from "../../public/images/tools/js.png";
 import TSLogo from "../../public/images/tools/ts.png";
 import ReduxLogo from "../../public/images/tools/redux.png";
 import GitLogo from "../../public/images/tools/git.png";
+import { StaticImageData } from "next/image";
 
-export const stackList = [
+export type StackType = {
+  name: string;
+  imageSrc: StaticImageData;
+};
+
+export const stackList: StackType[] = [
   { imageSrc: ReactLogo, name: "React.js" },
   { imageSrc: ReactNativeLogo, name: "React-Native" },
   { imageSrc: NextLogo, name: "Next.js" },

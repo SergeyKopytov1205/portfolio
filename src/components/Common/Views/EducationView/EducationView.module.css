@@ -1,0 +1,43 @@
+.date {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--text_secondary);
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  gap: 4px;
+}
+
+.text_main {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text_primary);
+}
+
+.text_second {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--text_primary);
+}

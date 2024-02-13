@@ -1,4 +1,4 @@
-import MainTitle from "@/components/Common/MainTitle/MainTitle";
+import MainTitle from "@/components/Common/Titles/MainTitle/MainTitle";
 import classes from "./page.module.css";
 
 export default function Examples() {

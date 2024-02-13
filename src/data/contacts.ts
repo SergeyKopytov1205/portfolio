@@ -1,5 +1,11 @@
-import { ContactType } from "@/types";
-import { IconLocation, IconMail, IconPhone } from "@tabler/icons-react";
+import { IconLocation, IconMail, IconPhone, TablerIconsProps } from "@tabler/icons-react";
+
+export type ContactType = {
+  href: string;
+  name: string;
+  description: string;
+  Icon: (props: TablerIconsProps) => JSX.Element;
+};
 
 export const contacts: ContactType[] = [
   {

@@ -1,6 +1,6 @@
 import { Link } from "@/navigation";
 import classes from "./ContactItem.module.css";
-import { ContactType } from "@/types";
+import { ContactType } from "@/data";
 
 const ContactItem = ({ Icon, description, href, name }: ContactType) => {
   return (
