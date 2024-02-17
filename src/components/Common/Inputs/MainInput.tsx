@@ -6,7 +6,7 @@ import classes from "./MainInput.module.css";
 type MainInputProps = InputHTMLAttributes<HTMLInputElement> & {
   label: string;
   name: string;
-  onChangeForm: (key: string, e: ChangeEvent<HTMLInputElement>) => void;
+  onChangeForm: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
 const MainInput = ({
@@ -16,10 +16,6 @@ const MainInput = ({
   onChangeForm,
   ...props
 }: MainInputProps) => {
-  const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-    onChangeForm(name, e);
-  };
-
   return (
     <div className={classes.container}>
       <input
@@ -31,7 +27,7 @@ const MainInput = ({
         type="text"
         {...props}
         value={value}
-        onChange={onChangeHandler}
+        onChange={onChangeForm}
       />
       <label className={classes.label} htmlFor={name}>
         {label}
