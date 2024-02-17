@@ -5,17 +5,16 @@ import classes from "./page.module.css";
 import MainInput from "@/components/Common/Inputs/MainInput";
 import { ChangeEvent, FormEvent, useCallback, useState } from "react";
 import axios from "axios";
+import { ContactInputs } from "@/types";
 
-const defaultForm = { contact: "", message: "", name: "" };
-
-interface FormElements extends HTMLFormControlsCollection {
-  name: HTMLInputElement;
-  contact: HTMLInputElement;
-  message: HTMLInputElement;
-}
-
+const defaultForm: Record<ContactInputs, string> = {
+  contact: "",
+  message: "",
+  name: "",
+};
 interface Form extends HTMLFormElement {
-  readonly elements: FormElements;
+  readonly elements: HTMLFormControlsCollection &
+    Record<ContactInputs, HTMLInputElement>;
 }
 
 export default function Contacts() {

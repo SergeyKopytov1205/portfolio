@@ -2,10 +2,11 @@
 
 import { ChangeEvent, InputHTMLAttributes, memo } from "react";
 import classes from "./MainInput.module.css";
+import { ContactInputs } from "@/types";
 
 type MainInputProps = InputHTMLAttributes<HTMLInputElement> & {
   label: string;
-  name: string;
+  name: ContactInputs;
   onChangeForm: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 

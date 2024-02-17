@@ -6,3 +6,5 @@ export type NavBarItemType = {
   href: string;
   isActive: boolean;
 };
+
+export type ContactInputs = "contact" | "message" | "name";
