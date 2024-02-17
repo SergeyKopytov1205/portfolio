@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.label {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.input {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--background_accent_weak);
+  font: 18px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 12px;
+  color: var(--text-primary);
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--background_accent);
+}
+
+.input:focus ~ .label,
+.input.has_content ~ .label {
+  top: -30%;
+  transform: scale(0.8);
+}
+
+@media (max-width: 522px) {
+  .label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .input {
+    font-size: 16px;
+    padding: 4px;
+  }
+}
