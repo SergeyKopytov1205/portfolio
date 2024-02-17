@@ -10,3 +10,9 @@
   letter-spacing: 0.02em;
   color: var(--text_primary);
 }
+
+@media (max-width: 932px) {
+  .item {
+    padding: 2px 4px;
+  }
+}

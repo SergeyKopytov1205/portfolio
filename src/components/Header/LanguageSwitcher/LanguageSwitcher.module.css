@@ -1,6 +1,5 @@
 .link {
   width: 100%;
-  min-width: 40px;
   aspect-ratio: 1;
   display: flex;
   flex-shrink: 0;
@@ -13,4 +12,12 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
+}
+
+@media (max-width: 522px) {
+  .link {
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 400;
+  }
 }

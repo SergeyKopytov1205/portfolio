@@ -8,7 +8,7 @@ import EducationView from "@/components/Common/Views/EducationView/EducationView
 
 export default function Experience() {
   return (
-    <div className={classes.container}>
+    <main className={classes.container}>
       <MainTitle title="Experience" />
       <SecondTitle Icon={IconBriefcase} name="Career" />
       {experienceList.map((experience) => {
@@ -23,6 +23,6 @@ export default function Experience() {
       {educationList.map((education) => {
         return <EducationView key={education.period} {...education} />;
       })}
-    </div>
+    </main>
   );
 }

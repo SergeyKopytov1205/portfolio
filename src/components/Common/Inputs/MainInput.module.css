@@ -46,3 +46,15 @@
   top: -30%;
   transform: scale(0.8);
 }
+
+@media (max-width: 522px) {
+  .label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .input {
+    font-size: 16px;
+    padding: 4px;
+  }
+}

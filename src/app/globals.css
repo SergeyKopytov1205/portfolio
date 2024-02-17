@@ -17,10 +17,6 @@
 
   --border_radius_big: 20px;
   --border_radius_small: 8px;
-
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
 }
 
 [data-theme="dark"] {
@@ -92,4 +88,11 @@ a:hover {
   transform: scale(1.1);
   transition: all 0.1s;
   box-shadow: var(--shadow);
+}
+
+@media (max-width: 932px) {
+  :root {
+    --border_radius_big: 8px;
+    --border_radius_small: 4px;
+  }
 }

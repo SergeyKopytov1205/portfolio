@@ -38,7 +38,7 @@ export default function Contacts() {
     setForm((state) => ({ ...state, [e.target.name]: e.target.value }));
   }, []);
   return (
-    <div className={classes.container}>
+    <main className={classes.container}>
       <MainTitle title="Contacts" />
       <div className={classes.content}>
         <p className={classes.introduction}>
@@ -72,6 +72,6 @@ export default function Contacts() {
           </button>
         </form>
       </div>
-    </div>
+    </main>
   );
 }

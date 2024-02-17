@@ -15,22 +15,13 @@
   padding-bottom: 50px;
 }
 
-.main {
-  grid-area: content;
-  background-color: var(--background_primary);
-  border-radius: var(--border_radius_big);
-  box-shadow: var(--shadow_light);
-  padding: 25px;
-}
-
-@media (max-width: 900px) {
+@media (max-width: 932px) {
   .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 50px 1fr;
-    grid-template-areas:
-      "header"
-      "nav"
-      "sidebar"
-      "content";
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 20px;
   }
 }

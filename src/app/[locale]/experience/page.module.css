@@ -6,13 +6,18 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
+  grid-area: content;
+  background-color: var(--background_primary);
+  border-radius: var(--border_radius_big);
+  box-shadow: var(--shadow_light);
+  padding: 25px;
+  order: 3;
 }
 
-.title {
-  font-family: var(--second-family);
-  font-weight: 500;
-  font-size: 27px;
-  line-height: 167%;
-  letter-spacing: 0.03em;
-  color: var(--text_primary);
+@media (max-width: 932px) {
+  .container {
+    padding: 16px;
+    gap: 16px;
+    order: 1;
+  }
 }
