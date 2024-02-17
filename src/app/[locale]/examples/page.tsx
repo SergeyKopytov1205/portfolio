@@ -5,11 +5,11 @@ import ProjectView from "@/components/Common/Views/ProjectView/ProjectView";
 
 export default function Examples() {
   return (
-    <div className={classes.container}>
+    <main className={classes.container}>
       <MainTitle title="Examples" />
       {projectsList.map((project) => {
         return <ProjectView key={project.name} {...project} />;
       })}
-    </div>
+    </main>
   );
 }

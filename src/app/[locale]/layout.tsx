@@ -26,7 +26,7 @@ export default async function LocaleLayout({
               <Header />
               <NavBar />
               <Aside />
-              <main className={`${classes.main}`}>{children}</main>
+              {children}
             </div>
           </NextIntlClientProvider>
         </ClientThemeProvider>

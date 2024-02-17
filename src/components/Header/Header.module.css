@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   grid-area: header;
   padding-block: 20px;
   display: flex;
@@ -6,6 +7,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  order: 0;
 }
 
 .settings {
@@ -18,4 +20,20 @@
 .button_wrapper {
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 522px) {
+  .container {
+    padding-block: 8px;
+    gap: 16px;
+  }
+
+  .settings {
+    gap: 16px;
+  }
+
+  .button_wrapper {
+    width: 24px;
+    height: 24px;
+  }
 }

@@ -42,7 +42,7 @@ const ExperienceView = ({
                 <div className={classes.text_second}>
                   {responsibility.description}
                 </div>
-                <ul className={classes.row}>
+                <ul className={classes.list}>
                   {responsibility.stack.map((stack) => {
                     return <TagItem key={stack} name={stack} />;
                   })}

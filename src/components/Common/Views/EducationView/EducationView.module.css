@@ -41,3 +41,31 @@
   font-size: 13px;
   color: var(--text_primary);
 }
+
+
+@media (max-width: 932px) {
+  .date {
+    font-size: 12px;
+  }
+
+  .text_main {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .text_second {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 522px) {
+  .row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .right {
+    gap: 4px;
+  }
+}

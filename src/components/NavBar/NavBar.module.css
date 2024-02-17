@@ -1,9 +1,11 @@
 .container {
+  width: 100%;
   grid-area: nav;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
+  order: 1;
 }
 
 .list {
@@ -20,4 +22,24 @@
 .item {
   width: 80px;
   height: 80px;
+}
+
+@media (max-width: 932px) {
+  .list {
+    gap: 16px;
+    padding: 8px 16px;
+  }
+
+  .item {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 522px) {
+
+  .item {
+    width: 30px;
+    height: 30px;
+  }
 }
