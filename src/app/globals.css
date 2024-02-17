@@ -2,7 +2,6 @@
   --background_body: #f2f5f9;
   --background_primary: #ffffff;
   --background_secondary: #f2f7fc;
-  --background_tertiary: #f2f5f9;
   --background_accent: #ffe3bf;
   --background_accent_weak: #ffeed9;
   --background_button: #e1e8ef;
@@ -12,18 +11,22 @@
   --text_tertiary: #57657a;
 
   --shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  --shadow_light: 0 0 0 0 rgba(0, 0, 0, 0.25);
 
   --gradient: linear-gradient(127deg, #ff9c1a 0%, #e80505 100%);
 
   --border_radius_big: 20px;
   --border_radius_small: 8px;
+
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
 }
 
 [data-theme="dark"] {
   --background_body: #1c1c1c;
   --background_primary: #252525;
   --background_secondary: #2d2d2d;
-  --background_tertiary: #383838;
   --background_accent: #bf964f;
   --background_accent_weak: #dec26b;
   --background_button: #474747;
@@ -33,6 +36,7 @@
   --text_tertiary: #dcdcdc;
 
   --shadow: 0 0 4px 0 rgba(255, 255, 255, 0.25);
+  --shadow_light: 0 0 0 0 rgba(255, 255, 255, 0.25);
 }
 
 *,
@@ -54,7 +58,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-color: var(--background_body);
+  font-family: var(--second-family);
   color: var(--text_primary);
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -79,4 +85,11 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button:hover,
+a:hover {
+  transform: scale(1.1);
+  transition: all 0.1s;
+  box-shadow: var(--shadow);
 }

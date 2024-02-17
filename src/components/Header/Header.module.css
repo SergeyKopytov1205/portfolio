@@ -1,0 +1,21 @@
+.container {
+  grid-area: header;
+  padding-block: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.button_wrapper {
+  width: 40px;
+  height: 40px;
+}

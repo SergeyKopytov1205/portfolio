@@ -2,6 +2,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import ClientThemeProvider from "@/providers/ClientThemeProvider";
 import { poppins, courierPrime, raleway } from "../fonts";
+import classes from "./layout.module.css";
+import Header from "@/components/Header/Header";
+import NavBar from "@/components/NavBar/NavBar";
+import Aside from "@/components/Aside/Aside";
 
 export default async function LocaleLayout({
   children,
@@ -18,7 +22,12 @@ export default async function LocaleLayout({
       >
         <ClientThemeProvider>
           <NextIntlClientProvider locale={locale} messages={messages}>
-            {children}
+            <div className={`${classes.grid}`}>
+              <Header />
+              <NavBar />
+              <Aside />
+              <main className={`${classes.main}`}>{children}</main>
+            </div>
           </NextIntlClientProvider>
         </ClientThemeProvider>
       </body>
