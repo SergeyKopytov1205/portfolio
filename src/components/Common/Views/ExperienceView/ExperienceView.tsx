@@ -2,7 +2,7 @@
 
 import { ExperienceType } from "@/data";
 import classes from "./ExperienceView.module.css";
-import { DateTimeFormatOptions, useFormatter } from "next-intl";
+import { DateTimeFormatOptions, useFormatter, useTranslations } from "next-intl";
 import TagItem from "../../Items/TagItem/TagItem";
 
 const formatConfig: DateTimeFormatOptions = {
@@ -18,11 +18,12 @@ const ExperienceView = ({
   responsibilities,
 }: ExperienceType) => {
   const format = useFormatter();
+  const t = useTranslations("UI.Experience")
   const dateStart = new Date(dateAcceptance * 1000);
   const formattedDateStart = format.dateTime(dateStart, formatConfig);
   const formattedDateEnd =
     dateDismissal === null
-      ? "Present"
+      ? t("Present")
       : format.dateTime(dateStart, formatConfig);
   return (
     <div className={classes.column}>

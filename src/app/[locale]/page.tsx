@@ -1,18 +1,17 @@
 import MainTitle from "@/components/Common/Titles/MainTitle/MainTitle";
 import classes from "./page.module.css";
-import { stackList } from "@/data";
+import { getAboutData, stackList } from "@/data";
 import StackItem from "@/components/Common/Items/StackItem/StackItem";
+import { getTranslations } from "next-intl/server";
 
-export default function About() {
+export default async function About() {
+  const t = await getTranslations("UI.Home");
+  const { description } = await getAboutData();
   return (
     <div className={classes.container}>
-      <MainTitle title="Обо мне" />
-      <p className={classes.about}>
-        Разработчик веб и мобильных приложений с использованием React.js,
-        React-Native, Next.js. Особо ценю создание сложных,
-        высокопроизводительных приложений, работу в команде профессионалов.
-      </p>
-      <h2 className={classes.subtitle}>Мой технический стек</h2>
+      <MainTitle title={t("Title")} />
+      <p className={classes.about}>{description}</p>
+      <h2 className={classes.subtitle}>{t("Stack")}</h2>
       <ul className={classes.list}>
         {stackList.map((stack) => {
           return <StackItem key={stack.name} {...stack} />;

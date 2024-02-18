@@ -1,1 +1,94 @@
-{}
+{
+  "Data": {
+    "Location": {
+      "City": "Ekaterinburg",
+      "Country": "Russia"
+    },
+    "About": {
+      "Name": "Kopytov Sergei",
+      "Profession": "Frontend developer",
+      "Description": "Developer of web and mobile applications using React.js, React-Native, Next.js. I especially appreciate the creation of complex, high-performance applications, and working in a team of professionals."
+    },
+    "Education": {
+      "EducationFirst": {
+        "Establishment": "Ural State University of Railway Transport",
+        "Degree": "Engineer",
+        "Faculty": "Faculty of Electromechanics",
+        "Education": "Higher"
+      }
+    },
+    "Projects": {
+      "PortfolioWebApp": {
+        "Name": "Portfolio Web App",
+        "Description": "This web application is created to showcase my professional experience, as well as to illustrate the practical use of Next.js."
+      }
+    },
+    "Experience": {
+      "W2C": {
+        "CompanyName": "Welcome2City",
+        "Position": "Frontend developer",
+        "Responsibilities": {
+          "Mobile": {
+            "Name": "Mobile application development",
+            "Description": "Development of a mobile application with the functionality of ordering a taxi, searching and viewing establishments on the map, a universal service ordering system"
+          },
+          "Web": {
+            "Name": "Web application development",
+            "Description": "Development of a web application with universal service ordering functionality"
+          }
+        }
+      }
+    }
+  },
+  "UI": {
+    "Navigation": {
+      "Home": "Home",
+      "Experience": "Experience",
+      "Examples": "Examples",
+      "Contact": "Contact"
+    },
+    "Home": {
+      "Title": "About me",
+      "Stack": "My tech stack",
+      "Info": {
+        "Phone": "Phone",
+        "Email": "E-mail",
+        "Location": "Location"
+      },
+      "Download": "Download resume"
+    },
+    "Experience": {
+      "Title": "Work Experience",
+      "Career": "Career",
+      "Education": "Education",
+      "Present": "Present"
+    },
+    "Examples": {
+      "Title": "Examples of skills"
+    },
+    "Contact": {
+      "Title": "Contacts",
+      "Description": "I am always open for discussing new projects, opportunities in the world of technologies. Fill in the necessary details and I will get back to you as soon as possible",
+      "Form": {
+        "Inputs": {
+          "Name": {
+            "Label": "Name"
+          },
+          "Contact": {
+            "Label": "Contact"
+          },
+          "Message": {
+            "Label": "Message"
+          }
+        },
+        "Submit": "Send",
+        "Success": "Message successfully sent",
+        "Errors": {
+          "RateLimit": "Message has already been sent",
+          "ServerError": "Server error",
+          "InvalidRequest": "Check the correctness of the entered data"
+        }
+      }
+    }
+  }
+}
