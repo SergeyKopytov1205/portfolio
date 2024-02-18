@@ -1,4 +1,4 @@
-import { ProjectType } from "@/data/examples";
+import { ProjectType } from "@/data";
 import classes from "./ProjectView.module.css";
 import Image from "next/image";
 import { IconBrandGithubFilled, IconPhoto } from "@tabler/icons-react";
@@ -11,7 +11,7 @@ const ProjectView = (project: ProjectType) => {
     <div className={classes.container}>
       <div className={classes.image_container}>
         {image ? (
-          <Image src={image} alt={name} />
+          <Image src={image} alt={name} width={100} height={100} />
         ) : (
           <IconPhoto size={60} color="#999" />
         )}

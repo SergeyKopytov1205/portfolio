@@ -1,3 +1,5 @@
+import { getTranslations } from "next-intl/server";
+
 export type ProjectType = {
   name: string;
   description: string;
@@ -6,6 +8,7 @@ export type ProjectType = {
   repositoryLink: string;
   link: string | null;
   image: string | null;
+  translateKey: keyof IntlMessages["Data"]["Projects"];
 };
 
 // "Это веб-приложение создано для визуализации моего профессионального опыта, а также для иллюстрации практического применения Next.js."
@@ -19,5 +22,15 @@ export const projectsList: ProjectType[] = [
     repositoryLink: "https://github.com/SergeyKopytov1205/portfolio",
     link: null,
     image: null,
+    translateKey: "PortfolioWebApp",
   },
 ];
+
+export const getProjectsList = async () => {
+  const t = await getTranslations("Data.Projects");
+  return projectsList.map((project) => ({
+    ...project,
+    name: t(`${project.translateKey}.Name`),
+    description: t(`${project.translateKey}.Description`),
+  }));
+};

@@ -6,6 +6,7 @@ import MainInput from "@/components/Common/Inputs/MainInput";
 import { ChangeEvent, FormEvent, useCallback, useState } from "react";
 import axios from "axios";
 import { ContactInputs } from "@/types";
+import { useTranslations } from "next-intl";
 
 const defaultForm: Record<ContactInputs, string> = {
   contact: "",
@@ -19,6 +20,7 @@ interface Form extends HTMLFormElement {
 
 export default function Contacts() {
   const [form, setForm] = useState<typeof defaultForm>(defaultForm);
+  const t = useTranslations("UI.Contact");
 
   const handleSubmit = async (e: FormEvent<Form>) => {
     e.preventDefault();
@@ -39,36 +41,33 @@ export default function Contacts() {
   }, []);
   return (
     <main className={classes.container}>
-      <MainTitle title="Contacts" />
+      <MainTitle title={t("Title")} />
       <div className={classes.content}>
-        <p className={classes.introduction}>
-          I am always open to discussing new projects, opportunities in tech
-          world, partnerships and more so mentorship.
-        </p>
+        <p className={classes.introduction}>{t("Description")}</p>
         <form className={classes.form} onSubmit={handleSubmit}>
           <MainInput
-            label="Name"
+            label={t("Form.Inputs.Name.Label")}
             name="name"
             value={form.name}
             onChangeForm={onChangeForm}
             autoComplete="name"
           />
           <MainInput
-            label="Contact"
+            label={t("Form.Inputs.Contact.Label")}
             name="contact"
             value={form.contact}
             onChangeForm={onChangeForm}
             autoComplete="tel"
           />
           <MainInput
-            label="Message"
+            label={t("Form.Inputs.Message.Label")}
             name="message"
             value={form.message}
             onChangeForm={onChangeForm}
             autoComplete="none"
           />
           <button className={classes.button} type="submit">
-            Submit
+            {t("Form.Submit")}
           </button>
         </form>
       </div>

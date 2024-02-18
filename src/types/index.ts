@@ -1,7 +1,7 @@
 import { TablerIconsProps } from "@tabler/icons-react";
 
 export type NavBarItemType = {
-  name: string;
+  name: keyof IntlMessages["UI"]["Navigation"];
   Icon: (props: TablerIconsProps) => JSX.Element;
   href: string;
   isActive: boolean;
