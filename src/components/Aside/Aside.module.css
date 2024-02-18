@@ -52,7 +52,7 @@
   height: 200px;
   border-radius: var(--border_radius_big);
   box-shadow: var(--shadow);
-  background-color: lightblue;
+  background-color: var(--background_primary);
   overflow: hidden;
 }
 

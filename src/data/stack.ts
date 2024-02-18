@@ -1,12 +1,12 @@
-import ReactLogo from "../../public/images/tools/react.png";
-import ReactNativeLogo from "../../public/images/tools/react-native.png";
-import NextLogo from "../../public/images/tools/next.png";
-import HTMLLogo from "../../public/images/tools/html.png";
-import CSSLogo from "../../public/images/tools/css.png";
-import JSLogo from "../../public/images/tools/js.png";
-import TSLogo from "../../public/images/tools/ts.png";
-import ReduxLogo from "../../public/images/tools/redux.png";
-import GitLogo from "../../public/images/tools/git.png";
+import ReactLogo from "../../public/image/tools/react.png";
+import ReactNativeLogo from "../../public/image/tools/react-native.png";
+import NextLogo from "../../public/image/tools/next.png";
+import HTMLLogo from "../../public/image/tools/html.png";
+import CSSLogo from "../../public/image/tools/css.png";
+import JSLogo from "../../public/image/tools/js.png";
+import TSLogo from "../../public/image/tools/ts.png";
+import ReduxLogo from "../../public/image/tools/redux.png";
+import GitLogo from "../../public/image/tools/git.png";
 import { StaticImageData } from "next/image";
 
 export type StackType = {

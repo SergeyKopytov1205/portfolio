@@ -1,16 +1,16 @@
-import createMiddleware from "next-intl/middleware";
 import { locales, localePrefix } from "./navigation";
+import type { NextRequest } from "next/server";
+import createIntlMiddleware from "next-intl/middleware";
 
-export default createMiddleware({
-  locales,
-  defaultLocale: "ru",
-  localePrefix,
-});
+export function middleware(request: NextRequest) {
+  const handleI18nRouting = createIntlMiddleware({
+    locales,
+    defaultLocale: "ru",
+    localePrefix,
+  });
+  return handleI18nRouting(request);
+}
 
 export const config = {
-  matcher: [
-    "/",
-    "/(ru|en)/:path*",
-    "/((?!api|_next/static|_next/image|favicon.ico).*)",
-  ],
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };
