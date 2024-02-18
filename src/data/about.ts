@@ -15,6 +15,7 @@ type AboutType = {
   description: string;
   contacts: ContactType[];
   location: string;
+  image: string;
 };
 
 export const getAboutData = async () => {
@@ -23,6 +24,7 @@ export const getAboutData = async () => {
     name: t("About.Name"),
     description: t("About.Description"),
     profession: t("About.Profession"),
+    image: "/image/photo.jpg",
     contacts: [
       { value: "+79220279329", type: "phone" },
       { value: "kot63727@gmail.com", type: "email" },

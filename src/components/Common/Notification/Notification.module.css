@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 8px 16px;
+  border-radius: var(--border_radius_small);
+}
+
+.message {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: var(--text_primary);
+}
+
+.container.success {
+  background-color: rgba(0, 255, 81, 0.1);
+}
+
+.container.error {
+  background-color: rgba(255, 0, 0, 0.1);
+}

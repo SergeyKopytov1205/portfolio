@@ -21,7 +21,7 @@ export const projectsList: ProjectType[] = [
     stack: ["TypeScript", "Next.js", "Next-Intl"],
     repositoryLink: "https://github.com/SergeyKopytov1205/portfolio",
     link: null,
-    image: null,
+    image: "/image/projects/portfolio-web.png",
     translateKey: "PortfolioWebApp",
   },
 ];

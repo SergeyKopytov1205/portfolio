@@ -11,7 +11,14 @@ const ProjectView = (project: ProjectType) => {
     <div className={classes.container}>
       <div className={classes.image_container}>
         {image ? (
-          <Image src={image} alt={name} width={100} height={100} />
+          <Image
+            src={image}
+            alt={name}
+            fill
+            style={{ objectFit: "contain" }}
+            sizes="100%"
+            priority
+          />
         ) : (
           <IconPhoto size={60} color="#999" />
         )}
